@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "140110378604",
+    "firebase_url": "https://pdf-reader-6ede0.firebaseio.com",
+    "project_id": "pdf-reader-6ede0",
+    "storage_bucket": "pdf-reader-6ede0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:140110378604:android:63cfe0ba04fc91e0",
+        "android_client_info": {
+          "package_name": "com.vaidoos.guitorio.uploadfiletoserver"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "140110378604-p7ftrl66oon177qaan235gafojbc6l7f.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.vaidoos.guitorio.uploadfiletoserver",
+            "certificate_hash": "4a0ed3258af002ff5103a6c6d3f94980354ee600"
+          }
+        },
+        {
+          "client_id": "140110378604-8bei8j8eukr3kr81m4a54e7eejirl2lb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAN4xcA0lfvpVoiYLZ8Jtnxryv0gTFnuTU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "140110378604-8bei8j8eukr3kr81m4a54e7eejirl2lb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
