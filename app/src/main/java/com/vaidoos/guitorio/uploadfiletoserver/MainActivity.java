@@ -108,16 +108,16 @@ public class MainActivity extends AppCompatActivity {
         progressDialog.setProgress(0);
         progressDialog.show();
 
-        final String fileName = System.currentTimeMillis() + ".pdf";
-        final String fileName1 = System.currentTimeMillis() + "";
+        final String fileName = System.currentTimeMillis()+".pdf";
+        final String fileName1 = System.currentTimeMillis()+"";
         StorageReference storageReference = mStorageRef.getReference(); // referance root storage path
 
         storageReference.child("Uploads").child(fileName).putFile(pdfUri)
-                .addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
-                    @Override
-                    public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
+                                .addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
+                                    @Override
+                                    public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
 
-                        progressDialog.dismiss();
+                                        progressDialog.dismiss();
 
                         Toast.makeText(MainActivity.this, "File uploaded successfully in the storage", Toast.LENGTH_SHORT).show();
 

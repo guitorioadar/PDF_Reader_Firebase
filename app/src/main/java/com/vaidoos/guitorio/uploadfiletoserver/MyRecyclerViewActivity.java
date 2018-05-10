@@ -6,7 +6,9 @@ import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.widget.FrameLayout;
 
+import com.github.barteksc.pdfviewer.PDFView;
 import com.google.firebase.database.ChildEventListener;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -22,6 +24,8 @@ import java.util.ArrayList;
 public class MyRecyclerViewActivity extends AppCompatActivity {
 
     private RecyclerView recyclerView;
+    private FrameLayout frameLayout;
+    private PDFView pdfView;
 
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
@@ -35,7 +39,7 @@ public class MyRecyclerViewActivity extends AppCompatActivity {
             public void onChildAdded(DataSnapshot dataSnapshot, String s) {
                 // actually called indiv items at database ref...
                 String fileName = dataSnapshot.getKey(); // return the file name
-                String url = dataSnapshot.getValue().toString(); // return url for file
+                String url = dataSnapshot.getValue(String.class); // return url for file
 
                 ((MyAdapter)recyclerView.getAdapter()).update(fileName,url);
 

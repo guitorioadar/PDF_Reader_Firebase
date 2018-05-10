@@ -32,6 +32,8 @@ dependencies {
     //compile 'com.nbsp:library:1.8'
     implementation 'com.android.support:recyclerview-v7:27.1.1'
     implementation 'com.android.support:cardview-v7:27.1.1'
+
+    compile 'com.github.barteksc:android-pdf-viewer:2.8.2'
 }
 
 
